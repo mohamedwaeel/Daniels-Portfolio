@@ -12,9 +12,9 @@
   <title>Daniels</title>
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar">
   <!--  S T A R T       N A V B A R      S E C T I O N -->
-  <nav class="navbar navbar-expand-lg fixed-top py-3 ">
+  <nav id="navbar" class="navbar navbar-expand-lg fixed-top py-3 ">
     <div class="container">
 
       <a class="navbar-brand navbar-title" href="#">DANIELS</a>
@@ -25,7 +25,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 navbar-links">
           <li class="nav-item position-relative ">
-            <a class="nav-link navline active text-capitalize " aria-current="page" href="#home">Home</a>
+            <a class="nav-link navline text-capitalize " aria-current="page" href="#home">Home</a>
           </li>
           <li class="nav-item text-capitalize position-relative">
             <a class="nav-link navline" href="#about">about</a>
@@ -57,7 +57,7 @@
 
   <!--  S T A R T          H O M E     S E C T I O N -->
 
-  <header id="home" class=" d-flex justify-content-center align-items-center text-white text-center">
+  <header   id="home" class=" d-flex justify-content-center align-items-center text-white text-center">
     <div class="home-background ">
       <div class="home-text">
         <h5 class="mb-4">HELLO</h5>
@@ -80,7 +80,7 @@
   <!--  E N D             H O M E     S E C T I O N -->
 
   <!-- S TA R T           A B O U T      S E C T I O N -->
-  <section id="about">
+  <section  id="about">
     <div class="container mb-5">
       <div class="row my-5 pt-5 gy-4">
         <div class="col-lg-4">
@@ -288,19 +288,23 @@
               <div class="col-md-6 col-lg-4">
                 <div class="card position-relative border-0 shadow overflow-hidden">
                   <img src="imgs/portfolio/1.jpg" class="img-fluid" alt="">
+                 <!-- start layer  -->
                   <div class="layer d-flex justify-content-center align-items-center ">
                     <div class="layer-text">
                       <h6>web development</h6>
                       <div class="port-icon">
                         <i class="fa-solid fa-link p-2 border rounded-circle"></i>
+                        <!--start target properties -->
                         <i class="fa-solid fa-magnifying-glass-plus p-2 border rounded-circle"
                           data-bs-target="#img1" data-bs-toggle="modal"></i>
+                        <!--end target properties -->
                       </div>
                     </div>
-
                   </div>
-                </div>
+                  <!-- end layer -->
 
+                </div>
+                <!-- start modal  -->
                 <div class="modal fade" id="img1" aria-hidden="true" aria-labelledby="img1" tabindex="-1">
                   <div class="modal-dialog modal-dialog-centered modal-md">
                     <div class="modal-content">
@@ -313,7 +317,8 @@
                     </div>
                   </div>
                 </div>
-
+                <!-- end modal  -->
+                <!-- col </div> -->
               </div>
               <div class="col-md-6 col-lg-4">
                 <div class="card position-relative border-0 shadow overflow-hidden">
